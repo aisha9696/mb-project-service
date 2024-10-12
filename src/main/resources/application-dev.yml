@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mb-project
+    username: postgres
+    password: Mzoi2bV1%
+    driver-class-name: org.postgresql.Driver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/mb_project/protocol/openid-connect/certs
+
+okta:
+  oauth2:
+    issuer: https://dev-tutlfb4o5yuv7h8q.us.auth0.com/
+    client-id: AoPt4NILeGcGfZdtEKd7Hh4BHs9hmiIW
+    client-secret: CZ2kk-TVzcxa-RZ6dnz4sTUPjwFL3qfFwN5f1G0QcLx086xjDSvDza4guuO77i_C

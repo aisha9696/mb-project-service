@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+  profiles:
+    active: dev
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl.auto: validate
+app:
+  security:
+    ignore-url:
+      - /api/users/public/**
+      - /api/helper/public/**
+      - /v3/**
+      - /swagger-ui/**
+      - /s3/partners/**
